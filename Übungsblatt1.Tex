@@ -1,5 +1,6 @@
 \documentclass[paper=a4,fontsize=12pt,ngerman]{scrartcl}
 
+\usepackage{float}
 \usepackage{tikz}
 \usepackage{pgf-pie}
 \usepackage{longtable} % für lange Tabellen
@@ -20,7 +21,6 @@
 \usepackage{url}
 \usepackage{booktabs}
 \usepackage{siunitx}
-\usepackage{float}
 \sisetup{output-decimal-marker={,}}
 
 \begin{document}
@@ -35,8 +35,7 @@
 \section*{Abstract}
 Diese Arbeit beschäftigt sich mit dem Konzept des Vibe Coding, einer modernen Form der Softwareentwicklung, bei der Künstliche Intelligenz (KI) eine zentrale Rolle spielt. Ziel ist es, die Potenziale und Herausforderungen von KI-gestützten Programmierwerkzeugen zu analysieren und deren Auswirkungen auf die Qualität von Software sowie auf die Weiterentwicklung von Entwicklerinnen und Entwicklern zu bewerten. Es wird untersucht, inwiefern Vibe Coding den Zugang zur Programmierung erleichtert, aber auch welche Risiken durch einen möglichen Kompetenzverlust entstehen können. Abschließend werden Lösungsansätze vorgestellt, um einen verantwortungsvollen und nachhaltigen Einsatz von KI in der Softwareentwicklung zu fördern.
 
-
-\newpage
+\clearpage
 \section*{Selbstständigkeitserklärung}
 Ich versichere, dass ich die vorliegende Arbeit selbstständig verfasst und 
 keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe.
@@ -48,26 +47,23 @@ noch von einer anderen Person an dieser oder einer anderen Hochschule
 eingereicht wurde.
 
 Darüber hinaus ist mir bekannt, dass die Unrichtigkeit dieser Erklärung eine 
-Benotung der Arbeit mit der Note \glqq nicht ausreichend\grqq \ zur Folge hat 
+Benotung der Arbeit mit der Note \glqq nicht ausreichend\grqq{} zur Folge hat 
 und einen Ausschluss von der Erbringung weiterer Prüfungsleistungen zur Folge 
 haben kann.
 \bigskip
- 
 Saarbrücken, den 01.01.1970
 
 \smallskip
 \vspace{1cm}
 \noindent
-(Tony Adam S Nsangou Tatsinkou)\\
+Tony Adam S Nsangou\\
 Unterschrift
 
 % Das Inhaltsverzeichnis
 \clearpage
 \tableofcontents
 \thispagestyle{plain}
-\newpage
 
-\newpage
 \clearpage
 \section{Einleitung}
 In den letzten Jahren hat sich der Bereich der Programmierung rasant weiterentwickelt.
@@ -86,7 +82,6 @@ ohne Programmiererfahrung Apps, Websites und andere Software zu erstellen – du
 Ein besseres Verständnis darunter wäre:
 Vibe Coding ist eine Art der Softwareentwicklung, bei der man einer KI in einfacher Sprache sagt, was man will, und die KI schreibt den Code für dich. \citep{Datacamp}
 
-\newpage
 \clearpage
 \section{Analyse und Bewertung}
 In diesem Kapitel werden die aktuellen Entwicklungen und Herausforderungen rund um das Vibe Coding analysiert und bewertet. Zunächst erfolgt eine Betrachtung der aktuellen Situation, anschließend werden mögliche Lösungsansätze vorgestellt.
@@ -95,7 +90,7 @@ In diesem Kapitel werden die aktuellen Entwicklungen und Herausforderungen rund 
 Die aktuelle Situation besagt, dass die Einführung von KI in verschiedene Bereiche der Gesellschaft, 
 beispielsweise in der Schule, auch die Einführung von KI in der Softwareentwicklung zeigt. 
 Dabei handelt es sich um eine Art von Softwareentwicklung, bei der die KI den Code für dich schreibt,
-ohne jegliche Erfahrung in der Softwareentwicklung. Ich habe aus einer Umfrage folgenden Ergebnis erhalten : 
+ohne jegliche Erfahrung in der Softwareentwicklung. Ich habe aus einer Umfrage folgendes Ergebnis erhalten: 
 
 \begin{table}[h]
     \centering
@@ -115,62 +110,85 @@ ohne jegliche Erfahrung in der Softwareentwicklung. Ich habe aus einer Umfrage f
 \end{table}
 
 \begin{figure}[h]
-    \centering
-    \pie{65/Sehr hilfreich, 35/Ganz okay, 0/Wenig hilfreich, 0/Gar nicht hilfreich, 0/Weiß nicht / Noch nicht genutzt}
-    \caption{Wie hilfreich findest du KI-Tools beim Programmieren?}
-    \label{fig:pie-hilfreich}
-\end{figure}
-
+\centering
 \begin{tikzpicture}
-    \centering
-    \pie{75/Sehr wichtig, 25/wichtig, 0/Eher wichtig, 0/Gar nicht wichtig}
-    \caption{Wie wichtig findest du es, den KI-generierten Code zu verstehen, bevor du ihn nutzt ?}
-    \label={fig:pie-wichtigkeit}
-\end{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=15pt,
+    width=\textwidth,
+    height=10cm,
+    enlarge x limits=0.25,
+    ylabel={Prozent (\%)},
+    symbolic x coords={
+        Sehr hilfreich,
+        Ganz okay,
+        Sehr wichtig,
+        Wichtig,
+        Ja,
+        Ein bisschen,
+        Nein,
+        Noch nie überlegt
+    },
+    xtick=data,
+    x tick label style={rotate=45, anchor=east},
+    nodes near coords,
+    ymin=0,
+    ymax=100,
+    legend style={at={(0.5,-0.2)},anchor=north,legend columns=3},
+]
+\addplot coordinates {
+    (Sehr hilfreich,65)
+    (Ganz okay,35)
+};
 
-\begin{figure}[h]
-    \centering
-    \pie{35/Ja, 35/Ein bisschen, 20/Nein, 10/Habe ich mir noch nie überlegt}
-    \caption{Machst du dir Gedanken über Datenschutz oder mögliche Plagiate bei der Nutzung von KI-Tools?}
-    \label{fig:pie-datenschutz}
+\addplot coordinates {
+    (Sehr wichtig,75)
+    (Wichtig,25)
+};
+
+\addplot coordinates {
+    (Ja,35)
+    (Ein bisschen,35)
+    (Nein,20)
+    (Noch nie überlegt,10)
+};
+
+\legend{Hilfreich beim Programmieren,Verstehen von KI-Code,Datenschutz/Plagiate}
+\end{axis}
+\end{tikzpicture}
+\caption{Zusammenfassung der Umfrageergebnisse zu KI-Tools beim Programmieren}
 \end{figure}
 
-
-\begin{table}[H]
-   \centering
-   \begin{longtable}{p{8cm}} 
+\begin{longtable}{p{8cm}} 
+    \caption{Meinungen zu Vibe Coding} \label{tab:meinungen} \\
     \toprule
-    \textbf{Was is dein Meinung zu Vibe Coding ?} \\
+    \textbf{Was ist deine Meinung zu Vibe Coding?} \\
     \midrule
-    Die generierten Codeteile sind selten fehlerfrei oder machen das was man möchte. Daher muss man oft 
-    auf Fehler hinweisen oder beheben. Ohne logisches Verständnis was grundsätzlich passiert ist nicht 
-    sinnvoll.
+    Die generierten Codeteile sind selten fehlerfrei oder machen das, was man möchte. Daher muss man oft 
+    auf Fehler hinweisen oder beheben. Ohne logisches Verständnis, was grundsätzlich passiert, ist es nicht 
+    sinnvoll. \\
     \midrule
-    Ist cool, aber ich wünschte ich hätte keine Möglichkeit bekommen KI zu benutzen.
+    Ist cool, aber ich wünschte, ich hätte keine Möglichkeit bekommen, KI zu benutzen. \\
     \midrule
-    erhöht die Menge an Technical Debt enorm. 
+    Erhöht die Menge an Technical Debt enorm. \\
     \midrule
-    Kommt drauf an. Bei "Vibe Coding" läuft man Gefahr eben genau solche Sachen wie Urheberrecht, Bugs, Inconsistency, etc. einzubauen. 
-    Ich finde, es spricht nichts dagegen auch viel KI zu verwenden, aber man muss immernoch selber darauf achten, dass auch alles für das eigene Projekt noch passt, lesbar, consistent, frei von technischen Schulden, etc. bleibt. 
-    Das was ich teilweise online an "Vibe Coding" gesehen habe entspricht aber meistens nicht diesen Standards, sondern ist vielmehr eine Notlösung für Leute, die keine/kaum Ausbildung in dem Bereich haben und trotzdem, warum auch immer, so etwas umsetzen müssen oder wollen. 
+    Kommt drauf an. Bei "Vibe Coding" läuft man Gefahr, eben genau solche Sachen wie Urheberrecht, Bugs, Inconsistency, etc. einzubauen. 
+    Ich finde, es spricht nichts dagegen, auch viel KI zu verwenden, aber man muss immer noch selber darauf achten, dass auch alles für das eigene Projekt noch passt, lesbar, konsistent, frei von technischen Schulden, etc. bleibt. 
+    Das, was ich teilweise online an "Vibe Coding" gesehen habe, entspricht aber meistens nicht diesen Standards, sondern ist vielmehr eine Notlösung für Leute, die keine/kaum Ausbildung in dem Bereich haben und trotzdem, warum auch immer, so etwas umsetzen müssen oder wollen. 
     (Oder wenn man einfach einen schnellen Prototypen baut. Was ich sagen will ist: Vibe Coding hat nur begrenzte, aber sinnvolle Anwendungsbereiche. 
-    In der Realität führt es aber oft dazu, dass es für Produktive Zwecke verwendet wird)
+    In der Realität führt es aber oft dazu, dass es für produktive Zwecke verwendet wird). \\
     \midrule
-    Vibe Coding macht jeder aber hasst man auch, es ist schön, etwas schnell sichtbar zu bekommen, jedeoch 
-    ist die spätere weiterarbeit daran sehr schmerzhaft und verständnis fehlt. Für Prototypen ok 
+    Vibe Coding macht jeder, aber man hasst es auch, es ist schön, etwas schnell sichtbar zu bekommen, jedoch 
+    ist die spätere Weiterarbeit daran sehr schmerzhaft und Verständnis fehlt. Für Prototypen ok. \\
     \midrule
-    Ich finde nicht so gut, man sollte wissen was man tut, es verstehen und drüber nachdenken und nicht nur 
-    Code der KI Copy Pasten 
+    Ich finde es nicht so gut, man sollte wissen, was man tut, es verstehen und darüber nachdenken und nicht nur 
+    Code der KI kopieren und einfügen. \\
     \midrule
-    Sich als Vibe Coder Programmierer zu nennen ist fast schon uns gegenüber beleidigend. 
+    Sich als Vibe Coder Programmierer zu nennen, ist fast schon uns gegenüber beleidigend. \\
     \midrule
-    Ich denke nicht, dass man nur mit KI ohne Vorkenntnisse langfristig coden kann
-    \end{longtable}
-    \caption{Meinungen zu Vibe Coding}
-    \label{tab:meinungen}
-\end{table}
-
-
+    Ich denke nicht, dass man nur mit KI ohne Vorkenntnisse langfristig coden kann. \\
+    \bottomrule
+\end{longtable}
 
 \begin{quote}
 A tweet from Peter Yang perfectly captures what I’ve been observing in the field: \\
@@ -187,21 +205,19 @@ Als Lösungsansätze können wir die folgenden Punkte nennen:
     \item Integration von KI-gestütztem Coding als Ergänzung, nicht als Ersatz für klassische Lernmethoden.
 \end{itemize}
 
-\newpage
 \clearpage
 \section{Ergebnisse und Diskussion}
 In diesem Kapitel werden die wichtigsten Ergebnisse der Analyse zusammengefasst und diskutiert. Es wird aufgezeigt, welche Chancen und Risiken sich durch den Einsatz von Vibe Coding ergeben.
 
 \subsection{Ergebnisse der Analyse}
 Die Analyse zeigt, dass Vibe Coding den Zugang zur Softwareentwicklung erleichtert, aber auch die Gefahr birgt, dass grundlegende Kompetenzen verloren gehen.
-Außerdem wenn man das betrachtet , KI-Tools tötet der Grundkonzept der Softwareentwicklung, da sie den Fokus auf das Ergebnis legen und nicht auf den Prozess des Lernens und Verstehens.
+Außerdem, wenn man das betrachtet, tötet das Grundkonzept der Softwareentwicklung, da sie den Fokus auf das Ergebnis legen und nicht auf den Prozess des Lernens und Verstehens.
 Die Ergebnisse der Analyse verdeutlichen, dass Vibe Coding sowohl Chancen als auch Herausforderungen mit sich bringt.
 Die Chancen liegen in der schnelleren Umsetzung von Ideen und der Erleichterung des Zugangs zur Programmierung für Nicht-Programmierer.
 Die Herausforderungen bestehen darin, dass die Qualität des Codes und das Verständnis für die zugrunde liegenden Konzepte leiden können, wenn KI-Tools ohne ausreichende Kenntnisse und Erfahrung eingesetzt werden.
 
-
 Es ist wichtig, einen Mittelweg zu finden: KI-Tools können unterstützen, sollten aber nicht das Verständnis für grundlegende Konzepte ersetzen.
-wenn wir von Softwareentwicklung sprechen, ist es wichtig zu verstehen dass Softwareentwicklung mit Geistigen Konzept verbunden ist wie Geduld, lesen usw.
+Wenn wir von Softwareentwicklung sprechen, ist es wichtig zu verstehen, dass Softwareentwicklung mit geistigen Konzepten verbunden ist wie Geduld, Lesen usw.
 
 \clearpage
 \section{Fazit und Schlussfolgerungen}
@@ -214,24 +230,9 @@ Wird dadurch die Weiterentwicklung von Menschen, die im Bereich der Softwareentw
 Wie wird die Qualität von Software in Zukunft aussehen, wenn wir uns zu sehr auf KI-Tools verlassen?
 
 \subsection{Diskussion}
-<<<<<<< HEAD
-Wenn ich als Bachelor-Student in der Informatik über das Zukunft der Softwareentwicklung Branche mir dran 
-denke, stelle ich mir ein Menge von Defizit vor wegen das Vibe Coding 
-wo man sich komplett auf KI-tools drauf lässt ohne jegliche Denkweise dran zu setzen.
+Wenn ich als Bachelor-Student in der Informatik mich dran denke, stelle ich mir eine Menge von Defiziten vor wegen des Vibe Codings, wo man sich komplett auf KI-Tools verlässt, ohne jegliche Denkweise darauf zu setzen.
+
 % Hier beginnt das Literaturverzeichnis
-=======
-Einige Entwickler glauben, dass 'Vibe Coding' 
-eine Lösung sein könnte. 
-Tatsächlich aber untergräbt 'Vibe Coding' die Kernkonzepte der Softwareentwicklung. 
-KI-Tools sollen Entwickler unterstützen, wenn sie an ihre menschlichen Grenzen stoßen. 
-Im Gegensatz dazu versucht 'Vibe Coding' lediglich, eine gedankliche Vorstellung in Code umzusetzen."
-Es ist wichtig, einen Mittelweg zu finden: KI-Tools können unterstützen, sollten aber nicht das Verständnis für grundlegende Konzepte ersetzen.
-wenn wir von Softwareentwicklung sprechen, ist es wichtig zu verstehen dass Softwareentwicklung mit Geistigen Konzept verbunden ist wie Geduld, lesen usw.
-
-
-% Literaturverzeichnis
->>>>>>> 046032c (Ich habe meine Ergebnisse von Umfrage hinzugefügt)
-\clearpage
 \renewcommand\refname{Literaturverzeichnis}
 \bibliographystyle{alpha}
 \bibliography{references}
@@ -248,5 +249,4 @@ Für die Analyse und Bewertung von Vibe Coding wurden verschiedene Quellen heran
 
 Zusätzlich wurden weitere wissenschaftliche Artikel, Blogbeiträge und Erfahrungsberichte ausgewertet, um ein möglichst breites und aktuelles Datenmaterial zu erhalten. Die Kombination dieser Quellen ermöglicht eine fundierte Analyse der Potenziale und Grenzen von Vibe Coding.
 
-\end{document}\usepackage{tikz}
-\usepackage{pgf-pie}
+\end{document}
