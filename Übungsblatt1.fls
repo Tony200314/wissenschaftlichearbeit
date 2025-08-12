@@ -152,6 +152,13 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/pgf-pie/tikzlibrarypie.code.t
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/pgf-pie/tikzlibrarypie.code.tex
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/carlisle/scalefnt.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/carlisle/scalefnt.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption-koma.sto
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption-koma.sto
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption-koma.sto
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
@@ -344,6 +351,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.st
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT ./Übungsblatt1.out
 INPUT ./Übungsblatt1.out
 INPUT Übungsblatt1.out

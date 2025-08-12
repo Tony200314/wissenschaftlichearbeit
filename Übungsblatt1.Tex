@@ -3,6 +3,7 @@
 \usepackage{float}
 \usepackage{tikz}
 \usepackage{pgf-pie}
+\usepackage{caption}
 \usepackage{longtable} % für lange Tabellen
 \usepackage{fancyhdr}
 \usepackage{hyperref}
@@ -92,9 +93,9 @@ beispielsweise in der Schule, auch die Einführung von KI in der Softwareentwick
 Dabei handelt es sich um eine Art von Softwareentwicklung, bei der die KI den Code für dich schreibt,
 ohne jegliche Erfahrung in der Softwareentwicklung. Ich habe aus einer Umfrage folgendes Ergebnis erhalten: 
 
-\begin{table}[h]
+\begin{table}[ht]
     \centering
-    \caption{Wofür nutzt du KI-Tools hauptsächlich?}
+    \caption{Hauptsächliche Verwendungszwecke von KI-Tools}
     \begin{tabular}{l S[table-format=2.1]}
     \toprule
     \textbf{Kategorie} & \textbf{Anteil (\%)} \\
@@ -103,8 +104,7 @@ ohne jegliche Erfahrung in der Softwareentwicklung. Ich habe aus einer Umfrage f
     Code erklären lassen & 22.7 \\
     Fehler finden und beheben (Debugging) & 15.9 \\
     Hilfe bei Hausaufgaben oder Uni-Projekten & 16.1 \\
-    Kommentare oder Dokumentation erstellen & 68.8 \\
-    Ich nutze sie (noch) nicht & 0.0 \\
+    Kommentare oder Dokumentation erstellen & 6.8 \\
     \bottomrule
     \end{tabular}
 \end{table}
@@ -137,22 +137,21 @@ ohne jegliche Erfahrung in der Softwareentwicklung. Ich habe aus einer Umfrage f
     legend style={at={(0.5,-0.2)},anchor=north,legend columns=3},
 ]
 \addplot coordinates {
-    (Sehr hilfreich,65)
-    (Ganz okay,35)
+    (Sehr hilfreich, 65)
+    (Ganz okay, 35)
 };
 
 \addplot coordinates {
-    (Sehr wichtig,75)
-    (Wichtig,25)
+    (Sehr wichtig, 75)
+    (Wichtig, 25)
 };
 
 \addplot coordinates {
-    (Ja,35)
-    (Ein bisschen,35)
-    (Nein,20)
-    (Noch nie überlegt,10)
+    (Ja, 35)
+    (Ein bisschen, 35)
+    (Nein, 20)
+    (Noch nie überlegt, 10)
 };
-
 \legend{Hilfreich beim Programmieren,Verstehen von KI-Code,Datenschutz/Plagiate}
 \end{axis}
 \end{tikzpicture}
@@ -190,6 +189,26 @@ ohne jegliche Erfahrung in der Softwareentwicklung. Ich habe aus einer Umfrage f
     \bottomrule
 \end{longtable}
 
+\begin{figure}[ht]
+    \centering
+    \begin{minipage}[t]{0.45\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \pie{70/Ja, 30/Nein}
+        \end{tikzpicture}
+        \caption{Denkst du, dass KI-Tools dich beim Programmieren schneller oder produktiver machen?}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.45\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \pie[pos={8,0}, explode=0.1]{25/Ja, 10/Nein, 65/Ein bisschen}
+        \end{tikzpicture}
+        \caption{Haben Lehrende (z.\,B. Professor/innen oder Tutor/innen) erklärt, wie man KI-Tools sinnvoll oder ethisch nutzt?}
+    \end{minipage}
+\end{figure}
+\clearpage
+
 \begin{quote}
 A tweet from Peter Yang perfectly captures what I’ve been observing in the field: \\
 \textit{Honest reflections from coding with AI so far as a non-engineer: It can get you 70\% of the way there, but that last 30\% is frustrating. It keeps taking one step forward and two steps backward with new bugs, issues, etc. If I knew how the code worked I could probably fix it myself. But since I don’t, I question if I’m actually learning that much.}
@@ -197,12 +216,14 @@ A tweet from Peter Yang perfectly captures what I’ve been observing in the fie
 \end{quote}
 
 \subsection{Lösungsansätze}
-Nach der Analyse der aktuellen Situation zeigt sich, dass Vibe Coding eine vielversprechende Methode ist, aber auch große Risiken mit sich bringt, da es für Menschen ohne Programmiererfahrung schwierig sein kann. 
-Als Lösungsansätze können wir die folgenden Punkte nennen:
+Nach der Analyse der Umfrage wo sich leute geäußert haben über Vibe Coding daraus konnten wir einige Lösungsansätze ableiten, um die Herausforderungen des Vibe Codings zu bewältigen und die Qualität der Softwareentwicklung zu sichern:
 \begin{itemize}
     \item Förderung von Grundkenntnissen in der Programmierung, auch beim Einsatz von KI-Tools.
     \item Entwicklung von Leitfäden für den sinnvollen Einsatz von KI in der Softwareentwicklung.
     \item Integration von KI-gestütztem Coding als Ergänzung, nicht als Ersatz für klassische Lernmethoden.
+    \item Ein Rückgriff auf die archaische Programmierung bedeutet in diesem Fall, dass man bevorzugt Dokumentation liest und viele Quellen wie beispielsweise YouTube, StackOverflow usw. nutzt.
+    \item Das Es soll ein Modul eingefügt werden, in dem Studierende über die Nutzung von KI beraten werden. Außerdem wird dort gezeigt, wie KI genutzt werden kann. Das Modul trägt zur Schaffung einer positiven Arbeitsatmosphäre bei.
+    \item Aus beruflicher Perspektive sollte in Unternehmen von einer sehr cleveren Nutzung von KI abgeraten werden um das Vibe Coding zu vermeinden.  
 \end{itemize}
 
 \clearpage

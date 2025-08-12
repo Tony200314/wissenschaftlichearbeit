@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex Übungsblatt1"] 1754934844.87183 "Übungsblatt1.aux" "Übungsblatt1.bbl" "Übungsblatt1" 1754934852.05024 0
+["bibtex Übungsblatt1"] 1754994854.59368 "Übungsblatt1.aux" "Übungsblatt1.bbl" "Übungsblatt1" 1754994861.48293 0
   "./references.bib" 1754569608.3651 669 fce2800cd53a42f23786c95431e073b4 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/alpha.bst" 1292289607 23907 a5f93555796fb564b924339521f10a7c ""
-  "titleseite.aux" 1754934850.03259 712 dc991a088e5ae002f3caedf3e2fd1cf1 "pdflatex"
-  "Übungsblatt1.aux" 1754934850.89742 6865 b6a9af457099878c28f2da75e99470ff "pdflatex"
+  "titleseite.aux" 1754994859.69839 773 36e3b19a8f048371660b21a1b7e88b48 "pdflatex"
+  "Übungsblatt1.aux" 1754994860.4018 7342 0066f6491280716979ffc03296880981 "pdflatex"
   (generated)
   "Übungsblatt1.bbl"
   "Übungsblatt1.blg"
   (rewritten before read)
-["pdflatex"] 1754934845.1593 "Übungsblatt1.Tex" "Übungsblatt1.pdf" "Übungsblatt1" 1754934852.05091 0
+["pdflatex"] 1754994854.87662 "Übungsblatt1.Tex" "Übungsblatt1.pdf" "Übungsblatt1" 1754994861.4834 0
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -177,6 +177,10 @@
   "/usr/local/texlive/2025/texmf-dist/tex/latex/bookmark/bkm-pdftex.def" 1702241854 8818 aa5157b46368efebf023abff55611467 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/bookmark/bookmark.sty" 1702241854 18245 97e6be180cf07bb6f7008cfdaaecfce5 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty" 1579038678 6078 f1cb470c9199e7110a27851508ed7a5c ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption-koma.sto" 1696191071 6333 57259249669cec150aa89a6e45395d3f ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty" 1696191071 56128 c2ccf1a29d78c33bc553880402e4fb9a ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty" 1696191071 72619 ee90b6612147680fd73c3b1406a74245 ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/caption/ltcaption.sty" 1645391520 7418 021d7c4eb11bde94592761855a3d046e ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/carlisle/scalefnt.sty" 1137109962 1360 df2086bf924b14b72d6121fe9502fcdb ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1739306980 46850 d87daedc2abdc653769a6f1067849fe0 ""
@@ -246,13 +250,13 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1750318378 3345724 e3fbd91ac5a23617a8a1fab53891eebc ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "graphics/htw_logo.pdf" 1754388152.47621 38674 37be0a1187ef08bd560d140172e8408b ""
-  "titleseite.aux" 1754934850.03259 712 dc991a088e5ae002f3caedf3e2fd1cf1 "pdflatex"
+  "titleseite.aux" 1754994859.69839 773 36e3b19a8f048371660b21a1b7e88b48 "pdflatex"
   "titleseite.tex" 1754569608.36634 490 0e95830d41856f52f060be91089d7e2e ""
-  "Übungsblatt1.Tex" 1754934168.62956 12720 f25b1e0701a60bf713401db03ba30e35 ""
-  "Übungsblatt1.aux" 1754934850.89742 6865 b6a9af457099878c28f2da75e99470ff "pdflatex"
-  "Übungsblatt1.bbl" 1754934845.13999 291 8b7a9fbde9fa33e5114ab4e3c1814315 "bibtex Übungsblatt1"
-  "Übungsblatt1.out" 1754934849.39938 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Übungsblatt1.toc" 1754934850.91559 1178 1f939e1cc1447506c233bccbb3d5dae0 "pdflatex"
+  "Übungsblatt1.Tex" 1754994835.89049 13938 0b23ebc972fa82349fa5facfd61e86b3 ""
+  "Übungsblatt1.aux" 1754994860.4018 7342 0066f6491280716979ffc03296880981 "pdflatex"
+  "Übungsblatt1.bbl" 1754994854.86084 291 8b7a9fbde9fa33e5114ab4e3c1814315 "bibtex Übungsblatt1"
+  "Übungsblatt1.out" 1754994859.13295 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Übungsblatt1.toc" 1754994860.41699 1180 b0a27d3f2cefd844b1cd49d608b7a881 "pdflatex"
   (generated)
   "titleseite.aux"
   "Übungsblatt1.aux"
