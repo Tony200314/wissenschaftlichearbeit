@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.19)  12 AUG 2025 12:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.19)  22 AUG 2025 09:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1170,10 +1170,16 @@ s/htw_logo.pdf>])
 
 
 ]
+<draw-signature.png, id=30, 1082.0425pt x 400.49625pt>
+File: draw-signature.png Graphic file (type png)
+<use draw-signature.png>
+Package pdftex.def Info: draw-signature.png  used on input line 62.
+(pdftex.def)             Requested size: 113.81102pt x 42.12361pt.
+
 
 [3
 
-] (./Übungsblatt1.toc)
+ <./draw-signature.png>] (./Übungsblatt1.toc)
 \tf@toc=\write5
 \openout5 = `Übungsblatt1.toc'.
 
@@ -1186,10 +1192,10 @@ s/htw_logo.pdf>])
 [5
 
 ]
-Package pgfplots info on input line 138: Using 'lua backend=false' for axis: x 
+Package pgfplots info on input line 148: Using 'lua backend=false' for axis: x 
 coord trafo unsupported.
 
-Overfull \hbox (26.40091pt too wide) in paragraph at lines 157--158
+Overfull \hbox (26.40091pt too wide) in paragraph at lines 167--168
  [][] 
  []
 
@@ -1199,37 +1205,37 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [6
 
 ]
-Underfull \hbox (badness 2922) in paragraph at lines 199--199
+Underfull \hbox (badness 2922) in paragraph at lines 209--209
 [][][]|\T1/cmr/m/n/12 Denkst du, dass KI-
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 199--199
+Underfull \hbox (badness 1168) in paragraph at lines 209--209
 \T1/cmr/m/n/12 Tools dich beim Pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--199
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
 \T1/cmr/m/n/12 gram-mie-ren schnel-ler
  []
 
 
-Underfull \hbox (badness 2384) in paragraph at lines 199--199
+Underfull \hbox (badness 2384) in paragraph at lines 209--209
 \T1/cmr/m/n/12 oder pro-duk-ti-ver ma-
  []
 
 
-Overfull \hbox (9.37526pt too wide) in paragraph at lines 206--207
+Overfull \hbox (9.37526pt too wide) in paragraph at lines 216--217
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
 \T1/cmr/m/n/12 Pro-fes-sor/innen oder
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
 \T1/cmr/m/n/12 Tu-tor/innen) er-kl�rt,
  []
 
@@ -1263,10 +1269,10 @@ Package rerunfilecheck Info: File `Übungsblatt1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 42748 strings out of 473190
- 1031238 string characters out of 5715800
+ 42760 strings out of 473190
+ 1031564 string characters out of 5715800
  1708543 words of memory out of 5000000
- 65362 multiletter control sequences out of 15000+600000
+ 65373 multiletter control sequences out of 15000+600000
  570968 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,19n,107p,10908b,2414s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1281,10 +1287,10 @@ al/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local
 exlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/local/tex
 live/2025/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texli
 ve/2025/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on Übungsblatt1.pdf (12 pages, 236663 bytes).
+Output written on Übungsblatt1.pdf (12 pages, 252806 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
- 183 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
- 130 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 230 PDF objects out of 1000 (max. 8388607)
+ 186 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 135 words of extra memory for PDF output out of 10000 (max. 10000000)
 

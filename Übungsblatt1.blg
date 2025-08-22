@@ -4,44 +4,44 @@ The top-level auxiliary file: Übungsblatt1.aux
 A level-1 auxiliary file: titleseite.aux
 The style file: alpha.bst
 Database file #1: references.bib
-You've used 2 entries,
+You've used 3 entries,
             2543 wiz_defined-function locations,
-            569 strings with 4663 characters,
-and the built_in function-call counts, 544 in all, are:
-= -- 45
-> -- 16
-< -- 2
-+ -- 4
-- -- 4
-* -- 25
-:= -- 95
-add.period$ -- 5
-call.type$ -- 2
-change.case$ -- 9
-chr.to.int$ -- 2
-cite$ -- 2
-duplicate$ -- 27
-empty$ -- 51
-format.name$ -- 7
-if$ -- 110
+            574 strings with 4746 characters,
+and the built_in function-call counts, 800 in all, are:
+= -- 68
+> -- 24
+< -- 3
++ -- 6
+- -- 6
+* -- 36
+:= -- 134
+add.period$ -- 7
+call.type$ -- 3
+change.case$ -- 14
+chr.to.int$ -- 3
+cite$ -- 3
+duplicate$ -- 38
+empty$ -- 76
+format.name$ -- 11
+if$ -- 164
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 2
-newline$ -- 12
-num.names$ -- 6
-pop$ -- 19
+newline$ -- 16
+num.names$ -- 9
+pop$ -- 29
 preamble$ -- 1
-purify$ -- 12
+purify$ -- 18
 quote$ -- 0
-skip$ -- 24
+skip$ -- 36
 stack$ -- 0
-substring$ -- 14
-swap$ -- 2
-text.length$ -- 2
-text.prefix$ -- 1
+substring$ -- 21
+swap$ -- 3
+text.length$ -- 3
+text.prefix$ -- 2
 top$ -- 0
-type$ -- 12
+type$ -- 20
 warning$ -- 0
-while$ -- 4
-width$ -- 3
-write$ -- 23
+while$ -- 6
+width$ -- 4
+write$ -- 33
