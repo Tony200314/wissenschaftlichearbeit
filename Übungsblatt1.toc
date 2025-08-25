@@ -4,13 +4,13 @@
 \contentsline {subsection}{\numberline {1.2}Definitionen}{v}{subsection.1.2}%
 \contentsline {section}{\numberline {2}Analyse und Bewertung}{vi}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Analyse der aktuellen Situation}{vi}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Lösungsansätze}{ix}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Ergebnisse und Diskussion}{x}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Ergebnisse der Analyse}{x}{subsection.3.1}%
-\contentsline {section}{\numberline {4}Fazit und Schlussfolgerungen}{xi}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Offene Fragen}{xi}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Diskussion}{xi}{subsection.4.2}%
-\contentsline {section}{Literaturverzeichnis}{xi}{section*.7}%
-\contentsline {section}{Anhang}{xii}{part*.9}%
+\contentsline {subsection}{\numberline {2.2}Lösungsansätze}{viii}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Ergebnisse und Diskussion}{ix}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Ergebnisse der Analyse}{ix}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Fazit und Schlussfolgerungen}{x}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Offene Fragen}{x}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Diskussion}{x}{subsection.4.2}%
+\contentsline {section}{Literaturverzeichnis}{xi}{section*.9}%
+\contentsline {section}{Anhang}{xii}{part*.11}%
 \contentsline {section}{\numberline {A}Datenmaterial}{xii}{appendix.A}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

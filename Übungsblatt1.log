@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.19)  22 AUG 2025 09:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.19)  25 AUG 2025 14:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1029,7 +1029,7 @@ Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
 \l__siunitx_unit_position_int=\count360
 \l__siunitx_unit_total_int=\count361
 )
-(./Übungsblatt1.aux (./titleseite.aux))
+(./Übungsblatt1.aux)
 \openout1 = `Übungsblatt1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -1189,22 +1189,168 @@ Package pdftex.def Info: draw-signature.png  used on input line 62.
 
 ]
 
+Package natbib Warning: Citation `TweetAndrejKarpathy' on page v undefined on i
+nput line 82.
+
+
+Package natbib Warning: Citation `Datacamp' on page v undefined on input line 9
+4.
+
+
+
 [5
 
 ]
-Package pgfplots info on input line 148: Using 'lua backend=false' for axis: x 
+Package pgfplots info on input line 147: Using 'lua backend=false' for axis: st
+acked plots unsupported (yet).
+Package pgfplots info on input line 147: Using 'lua backend=false' for axis: x 
 coord trafo unsupported.
 
-Overfull \hbox (26.40091pt too wide) in paragraph at lines 167--168
+Overfull \hbox (84.14993pt too wide) in paragraph at lines 170--171
  [][] 
  []
 
 
+! LaTeX Error: Environment tabularx undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 \begin{tabularx}
+                      {\textwidth}{X} % X für automatische Spaltenbreite
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.179 \begin{tabularx}{\textwidth}
+                                  {X} % X für automatische Spaltenbreite
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.179 \begin{tabularx}{\textwidth}
+                                  {X} % X für automatische Spaltenbreite
+? 
+! Misplaced \noalign.
+\toprule ->\noalign 
+                    {\ifnum 0=`}\fi \@aboverulesep =\abovetopsep \global \@b...
+l.180     \toprule
+                  
+? 
+! Misplaced \noalign.
+\midrule ->\noalign 
+                    {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
+l.182     \midrule
+                  
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--183
+
+ []
+
+! Misplaced \noalign.
+\midrule ->\noalign 
+                    {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
+l.184     \midrule
+                  
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--185
+
+ []
+
+! Misplaced \noalign.
+\midrule ->\noalign 
+                    {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
+l.186     \midrule
+                  
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
+
+ []
+
+! Misplaced \noalign.
+\midrule ->\noalign 
+                    {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
+l.188     \midrule
+                  
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--189
+
+ []
+
+! Misplaced \noalign.
+\midrule ->\noalign 
+                    {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
+l.190     \midrule
+                  
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--191
+
+ []
+
+! Misplaced \noalign.
+\midrule ->\noalign 
+                    {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
+l.192     \midrule
+                  
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--193
+
+ []
+
+! Misplaced \noalign.
+\midrule ->\noalign 
+                    {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
+l.194     \midrule
+                  
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--195
+
+ []
+
+! Misplaced \noalign.
+\midrule ->\noalign 
+                    {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
+l.196     \midrule
+                  
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--197
+
+ []
+
+! Misplaced \noalign.
+\bottomrule ->\noalign 
+                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
+l.198     \bottomrule
+                     
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
+
+ []
+
+
+! LaTeX Error: \begin{table} on input line 176 ended by \end{tabularx}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 \end{tabularx}
+                    
+? 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6
 
-]
 Underfull \hbox (badness 2922) in paragraph at lines 209--209
 [][][]|\T1/cmr/m/n/12 Denkst du, dass KI-
  []
@@ -1241,56 +1387,162 @@ Underfull \hbox (badness 10000) in paragraph at lines 217--217
 
 
 
+[6
+
+]
+
 [7]
 
-[8]
+Package natbib Warning: Citation `VibeCodingTheFutureOfProgramming' on page vii
+i undefined on input line 225.
+
+
+
+[8
+
+{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+
 
 [9
 
-{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+]
+
+Package natbib Warning: Citation `Vibe_Coding_The_Future_Of_Programming2' on pa
+ge x undefined on input line 272.
+
+Package pgfplots info on input line 293: Using 'lua backend=false' for axis: x 
+coord trafo unsupported.
+
+Overfull \hbox (120.17252pt too wide) in paragraph at lines 297--298
+ [][] 
+ []
+
+Package pgfplots info on input line 317: Using 'lua backend=false' for axis: x 
+coord trafo unsupported.
+
+Overfull \hbox (120.17252pt too wide) in paragraph at lines 321--322
+ [][] 
+ []
+
 
 
 [10
 
 ] (./Übungsblatt1.bbl)
 
-[11
+[11]
 
-]
+Package natbib Warning: Citation `VibeCodingTheFutureOfProgramming' on page xii
+ undefined on input line 338.
+
+
+Package natbib Warning: There were undefined citations.
+
+
 
 [12
 
-] (./Übungsblatt1.aux (./titleseite.aux))
+] (./Übungsblatt1.aux (./titleseite.aux)
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+
+! Package natbib Error: Bibliography not compatible with author-year citations.
+
+(natbib)                Press <return> to continue in numerical citation style.
+
+
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 ...mand\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+? 
+)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `Übungsblatt1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 42760 strings out of 473190
- 1031564 string characters out of 5715800
- 1708543 words of memory out of 5000000
- 65373 multiletter control sequences out of 15000+600000
- 570968 words of font info for 60 fonts, out of 8000000 for 9000
+ 42778 strings out of 473190
+ 1031842 string characters out of 5715800
+ 1711543 words of memory out of 5000000
+ 65389 multiletter control sequences out of 15000+600000
+ 573511 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 110i,19n,107p,10908b,2414s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 110i,19n,107p,10908b,2606s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 ></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></u
-sr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr
-/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/l
-ocal/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/loc
-al/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local
-/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/t
-exlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/local/tex
-live/2025/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texli
-ve/2025/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on Übungsblatt1.pdf (12 pages, 252806 bytes).
+/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
+r/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/
+local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/lo
+cal/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/loca
+l/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/
+texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/te
+xlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texl
+ive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texliv
+e/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/local/texlive/
+2025/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/20
+25/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on Übungsblatt1.pdf (12 pages, 279799 bytes).
 PDF statistics:
- 230 PDF objects out of 1000 (max. 8388607)
- 186 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
+ 223 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+h author-year citations.
+(natbib)                Press <return> to continue in numerical citation style.
+
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 ...mand\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+Check the bibliography entries for non-compliant syntax,
+or select author-year BibTeX style, e.g. plainnat
+
+)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `Übungsblatt1.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Übungsblatt1.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+ ) 
+Here is how much of TeX's memory you used:
+ 42770 strings out of 473190
+ 1031776 string characters out of 5715800
+ 1711543 words of memory out of 5000000
+ 65387 multiletter control sequences out of 15000+600000
+ 573511 words of font info for 64 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 110i,19n,107p,10944b,2606s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on Übungsblatt1.pdf (12 pages, 279799 bytes).
+PDF statistics:
+ 223 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
  135 words of extra memory for PDF output out of 10000 (max. 10000000)
 

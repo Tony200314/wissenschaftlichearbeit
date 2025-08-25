@@ -123,81 +123,81 @@ ohne jegliche Erfahrung in der Softwareentwicklung. Ich habe aus einer Umfrage f
 \centering
 \begin{tikzpicture}
 \begin{axis}[
-    ybar,
-    bar width=15pt,
+    ybar stacked,
+    bar width=30pt,
     width=\textwidth,
-    height=10cm,
-    enlarge x limits=0.25,
-    ylabel={Prozent (\%)},
-    symbolic x coords={
-        Sehr hilfreich,
-        Ganz okay,
-        Sehr wichtig,
-        Wichtig,
-        Ja,
-        Ein bisschen,
-        Nein,
-        Noch nie überlegt
-    },
-    xtick=data,
-    x tick label style={rotate=45, anchor=east},
-    nodes near coords,
+    height=8cm,
     ymin=0,
     ymax=100,
-    legend style={at={(0.5,-0.2)},anchor=north,legend columns=3},
+    ylabel={Prozent (\%)},
+    symbolic x coords={
+        Hilfreich beim Programmieren,
+        Verstehen von KI-Code,
+        Datenschutz/Plagiate
+    },
+    xtick=data,
+    x tick label style={rotate=15, anchor=east},
+    legend style={
+        at={(0.5,-0.25)},
+        anchor=north,
+        legend columns=2
+    },
+    nodes near coords,
+    every node near coord/.append style={font=\scriptsize},
 ]
-\addplot coordinates {
-    (Sehr hilfreich, 65)
-    (Ganz okay, 35)
-};
 
-\addplot coordinates {
-    (Sehr wichtig, 75)
-    (Wichtig, 25)
-};
+% Frage 1: Hilfreich beim Programmieren
+\addplot coordinates {(Hilfreich beim Programmieren,65)}; % Sehr hilfreich
+\addplot coordinates {(Hilfreich beim Programmieren,35)}; % Ganz okay
 
-\addplot coordinates {
-    (Ja, 35)
-    (Ein bisschen, 35)
-    (Nein, 20)
-    (Noch nie überlegt, 10)
-};
-\legend{Hilfreich beim Programmieren,Verstehen von KI-Code,Datenschutz/Plagiate}
+% Frage 2: Verstehen von KI-Code
+\addplot coordinates {(Verstehen von KI-Code,75)}; % Sehr wichtig
+\addplot coordinates {(Verstehen von KI-Code,25)}; % Wichtig
+
+% Frage 3: Datenschutz/Plagiate
+\addplot coordinates {(Datenschutz/Plagiate,35)}; % Ja
+\addplot coordinates {(Datenschutz/Plagiate,35)}; % Ein bisschen
+\addplot coordinates {(Datenschutz/Plagiate,20)}; % Nein
+\addplot coordinates {(Datenschutz/Plagiate,10)}; % Noch nie überlegt
+
+\legend{
+    Sehr hilfreich / Sehr wichtig / Ja,
+    Ganz okay / Wichtig / Ein bisschen,
+    Nein,
+    Noch nie überlegt
+}
 \end{axis}
 \end{tikzpicture}
 \caption{Zusammenfassung der Umfrageergebnisse zu KI-Tools beim Programmieren}
 \end{figure}
 
-\begin{longtable}{p{8cm}} 
-    \caption{Meinungen zu Vibe Coding} \label{tab:meinungen} \\
+
+
+\begin{table}[h]
+\small % Kleinere Schriftgröße
+\caption{Meinungen zu Vibe Coding} \label{tab:meinungen}
+\begin{tabularx}{\textwidth}{X} % X für automatische Spaltenbreite
     \toprule
-    \textbf{Was ist deine Meinung zu Vibe Coding?} \\
+    \textbf{Meinung zu Vibe Coding} \\
     \midrule
-    Die generierten Codeteile sind selten fehlerfrei oder machen das, was man möchte. Daher muss man oft 
-    auf Fehler hinweisen oder beheben. Ohne logisches Verständnis, was grundsätzlich passiert, ist es nicht 
-    sinnvoll. \\
+    Generierter Code oft fehlerhaft, erfordert logisches Verständnis zur Korrektur. \\
     \midrule
-    Ist cool, aber ich wünschte, ich hätte keine Möglichkeit bekommen, KI zu benutzen. \\
+    Cool, aber KI-Nutzung nicht immer wünschenswert. \\
     \midrule
-    Erhöht die Menge an Technical Debt enorm. \\
+    Erhöht Technical Debt erheblich. \\
     \midrule
-    Kommt drauf an. Bei "Vibe Coding" läuft man Gefahr, eben genau solche Sachen wie Urheberrecht, Bugs, Inconsistency, etc. einzubauen. 
-    Ich finde, es spricht nichts dagegen, auch viel KI zu verwenden, aber man muss immer noch selber darauf achten, dass auch alles für das eigene Projekt noch passt, lesbar, konsistent, frei von technischen Schulden, etc. bleibt. 
-    Das, was ich teilweise online an "Vibe Coding" gesehen habe, entspricht aber meistens nicht diesen Standards, sondern ist vielmehr eine Notlösung für Leute, die keine/kaum Ausbildung in dem Bereich haben und trotzdem, warum auch immer, so etwas umsetzen müssen oder wollen. 
-    (Oder wenn man einfach einen schnellen Prototypen baut. Was ich sagen will ist: Vibe Coding hat nur begrenzte, aber sinnvolle Anwendungsbereiche. 
-    In der Realität führt es aber oft dazu, dass es für produktive Zwecke verwendet wird). \\
+    Kann nützlich sein, aber Risiken wie Bugs und Inkonsistenzen bestehen. Für Prototypen geeignet, aber in Produktion problematisch. \\
     \midrule
-    Vibe Coding macht jeder, aber man hasst es auch, es ist schön, etwas schnell sichtbar zu bekommen, jedoch 
-    ist die spätere Weiterarbeit daran sehr schmerzhaft und Verständnis fehlt. Für Prototypen ok. \\
+    Schnelle Ergebnisse, aber spätere Weiterarbeit schwierig. Für Prototypen akzeptabel. \\
     \midrule
-    Ich finde es nicht so gut, man sollte wissen, was man tut, es verstehen und darüber nachdenken und nicht nur 
-    Code der KI kopieren und einfügen. \\
+    Kopieren von KI-Code ohne Verständnis ist problematisch. \\
     \midrule
-    Sich als Vibe Coder Programmierer zu nennen, ist fast schon uns gegenüber beleidigend. \\
+    „Vibe Coder“ als Begriff wirkt fast beleidigend. \\
     \midrule
-    Ich denke nicht, dass man nur mit KI ohne Vorkenntnisse langfristig coden kann. \\
+    Langfristiges Coding ohne Vorkenntnisse mit KI nicht realistisch. \\
     \bottomrule
-\end{longtable}
+\end{tabularx}
+\end{table}
 
 \begin{figure}[ht]
     \centering
@@ -261,9 +261,68 @@ Wird dadurch die Weiterentwicklung von Menschen, die im Bereich der Softwareentw
 Wie wird die Qualität von Software in Zukunft aussehen, wenn wir uns zu sehr auf KI-Tools verlassen?
 
 \subsection{Diskussion}
-Wenn ich als Bachelor-Student in der Informatik mich dran denke, stelle ich mir eine Menge von Defiziten vor wegen des Vibe Codings, wo man sich komplett auf KI-Tools verlässt, ohne jegliche Denkweise darauf zu setzen.
+Wenn ich als Bachelor-Student der Informatik daran denke, stelle ich mir eine Menge Defizite durch das Vibe Coding vor, bei dem man sich komplett auf KI-Tools verlässt, ohne selbst zu denken.
+Ich habe zwar Lösungsansätze vorgestellt, aber in Rahmen dieser Arbeit Konnte ich ein Aspekt ein geeignet methode zu finden der besser als das 
+Vibe Coding ist. Dies wäre ein Pair Programming mit einem KI-Tool. Diese Ansatz wurde mir vorgestellt in das Buch 
+Vibe Coding The Future Of Programming von Addy Osmani 
+\begin{quote}
+\textit{Traditional pair programming involves two humans collaborating at one workstation. With the Advent of AI, a hybrid approach has 
+emerged : one human developer working alongside an AI assistant. This setup can be particularly effective, offering a blend of human intuition and machine efficiency.}
+\end{quote}
+\citep{Vibe_Coding_The_Future_Of_Programming2}
+Nun möchte zwei diagramm darstellen, die die den Zukunft von Softwareentwicklung widerspiegel anhand von diese zwei Methoden, also 
+Pair Programming mit einem KI-Tool vs Vibe Coding.
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[t]{0.45\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                ybar,
+                bar width=30pt,
+                width=\textwidth,
+                height=8cm,
+                ymin=0,
+                ymax=100,
+                ylabel={Prozent (\%)},
+                symbolic x coords={Pair Programming mit KI-Tool, Vibe Coding},
+                xtick=data,
+                x tick label style={rotate=15, anchor=east},
+                nodes near coords,
+                every node near coord/.append style={font=\scriptsize},
+            ]
+            \addplot coordinates {(Pair Programming mit KI-Tool,85)};
+            \addplot coordinates {(Vibe Coding,40)};
+            \end{axis}
+        \end{tikzpicture}
+        \caption{Zukunft der Softwareentwicklung: Pair Programming mit KI-Tool vs Vibe Coding}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.45\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                ybar,
+                bar width=30pt,
+                width=\textwidth,
+                height=8cm,
+                ymin=0,
+                ymax=100,
+                ylabel={Prozent (\%)},
+                symbolic x coords={Pair Programming mit KI-Tool, Vibe Coding},
+                xtick=data,
+                x tick label style={rotate=15, anchor=east},
+                nodes near coords,
+                every node near coord/.append style={font=\scriptsize},
+            ]
+            \addplot coordinates {(Pair Programming mit KI-Tool,90)};
+            \addplot coordinates {(Vibe Coding,30)};
+            \end{axis}
+        \end{tikzpicture}
+        \caption{Zukunft der Softwareentwicklung: Pair Programming mit KI-Tool vs Vibe Coding (Qualität)}
+    \end{minipage}
+\end{figure}
 
-% Hier beginnt das Literaturverzeichnis
 \renewcommand\refname{Literaturverzeichnis}
 \bibliographystyle{alpha}
 \bibliography{references}
